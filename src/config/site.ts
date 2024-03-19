@@ -26,7 +26,7 @@ const SiteConfig: ConfigType = {
     "JavaScript",
   ],
   siteURL: "https://homayunmmdy.vercel.app/",
-  author: { name: "homayunmmdy", url: "https://nextjs.org" },
+  author: { name: "homayunmmdy", url: "https://homayunmmdy.vercel.app/" },
   lang: "en",
   dir: "ltr",
   nav: [
