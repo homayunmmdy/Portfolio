@@ -21,6 +21,11 @@ const SiteConfig = {
     },
     {
       id: 4,
+      name: "Projects",
+      link: "/projects",
+    },
+    {
+      id: 5,
       name: "Contacts",
       link: "/contacts",
     },
