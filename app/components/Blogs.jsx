@@ -1,6 +1,7 @@
 "use client"
 import { useEffect, useState } from 'react'
 import Service from './Service'
+import Link from 'next/link'
 
 // const data = [
 //     {
@@ -65,7 +66,9 @@ const Blogs = () => {
         <>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
                 {filterData?.map(item => (
-                    <Service key={item._id} title={item.title} desc={item.description} items={item.items} />
+                    <Link key={item._id} href={`/Posts/${item._id}`} >
+                        <Service title={item.title} desc={item.description} items={item.items} />
+                    </Link>
                 ))}
             </div>
             {data?.length < "6" ? null : <div className="flex justify-center my-6">
