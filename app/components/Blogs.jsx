@@ -1,6 +1,6 @@
 "use client"
 import { useEffect, useState } from 'react'
-import Service from './Service'
+import Service from './Section'
 import Link from 'next/link'
 
 // const data = [

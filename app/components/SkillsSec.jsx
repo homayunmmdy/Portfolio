@@ -46,7 +46,7 @@ const SkillsSec = () => {
                     <section className="mb-4">
                         <div className='flex items-center gap-2'>
                             <span className="text-yellow-600 text-2xl pr-1" >02.</span>
-                            <h1 className="text-2xl font-light  sm:text-4xl ">Frontend Developer</h1>
+                            <h1 className="text-2xl font-light  sm:text-4xl ">Freelancerr</h1>
                         </div>
                         <p className='font-light md:font-base md:text-xl my-2'>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -59,7 +59,7 @@ const SkillsSec = () => {
                     <section className="mb-4">
                         <div className='flex items-center gap-2'>
                             <span className="text-yellow-600 text-2xl pr-1" >03.</span>
-                            <h1 className="text-2xl font-light  sm:text-4xl ">Frontend Developer</h1>
+                            <h1 className="text-2xl font-light  sm:text-4xl ">Content Creator</h1>
                         </div>
                         <p className='font-light md:font-base md:text-xl my-2'>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
