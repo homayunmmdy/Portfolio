@@ -33,6 +33,11 @@ const SiteConfig: ConfigType = {
     },
     {
       id: 4,
+      name: "Courses",
+      link: "/courses",
+    },
+    {
+      id: 5,
       name: "Contacts",
       link: "/contacts",
     },
