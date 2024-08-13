@@ -1,6 +1,9 @@
 interface ConfigType {
   name: string;
   description: string;
+  keywords: string[];
+  siteURL: string;
+  author: { name: string; url: string };
   lang: string;
   dir: string;
   nav: {
@@ -13,6 +16,15 @@ interface ConfigType {
 const SiteConfig: ConfigType = {
   name: "Homayoun",
   description: "Endless learning the journey of discovering new things",
+  keywords: [
+    "homayunmmdy",
+    "Homayoun Mohammadi",
+    "Frontend Developer",
+    "React",
+    "JavaScript",
+  ],
+  siteURL: "https://homayunmmdy.vercel.app/",
+  author: { name: "homayunmmdy", url: "https://nextjs.org" },
   lang: "en",
   dir: "ltr",
   nav: [

@@ -19,19 +19,19 @@ const About = () => {
                     </button>
                     <ul className='flex gap-4 mt-10'>
                         <li>
-                            <Link href="/"><FaInstagram size={25} color='#fff' />
+                            <Link title='Instagram' href="/"><FaInstagram size={25} color='#fff' />
                             </Link>
                         </li>
                         <li>
-                            <Link href="/"><FaXTwitter size={25} color='#fff' />
+                            <Link title='X' href="/"><FaXTwitter size={25} color='#fff' />
                             </Link>
                         </li>
                         <li>
-                            <Link href="/"><FaLinkedinIn size={25} color='#fff' />
+                            <Link title='Linkedin' href="/"><FaLinkedinIn size={25} color='#fff' />
                             </Link>
                         </li>
                         <li>
-                            <Link href="/"><FaRegNewspaper size={25} color='#fff' />
+                            <Link title='NewsPaper' href="/"><FaRegNewspaper size={25} color='#fff' />
                             </Link>
                         </li>
                     </ul>

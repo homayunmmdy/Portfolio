@@ -4,7 +4,7 @@ import Link from "next/link";
 const WorkBtn = () => {
     return (
         <>
-            <button className="btn btn-warning w-full">
+            <button className="btn bg-[#f2ad00] btn-warning w-full">
                 <Link href="/contacts" className="font-bold text-xl">
                     Let us Work Together
                 </Link>

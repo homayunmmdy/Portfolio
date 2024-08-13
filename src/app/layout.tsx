@@ -12,6 +12,8 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: SiteConfig.name,
   description: SiteConfig.description,
+  keywords: SiteConfig.keywords,
+  authors: SiteConfig.author,
 };
 
 export default function RootLayout({
@@ -21,16 +23,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang={SiteConfig.lang} dir={SiteConfig.dir}>
-    <body className={inter.className}>
-      <Navbar />
-      {children}
-      <div style={{ background: "hsla(127, 8%, 14%, 1)" }}>
-        <div className='px-5 w-[98%] md:w-[92%] mx-auto'>
-          <GetStarted />
+      <body className={inter.className}>
+        <Navbar />
+        {children}
+        <div style={{ background: "hsla(127, 8%, 14%, 1)" }}>
+          <div className="px-5 w-[98%] md:w-[92%] mx-auto">
+            <GetStarted />
+          </div>
         </div>
-      </div>
-      <Footer />
-    </body>
-  </html>
+        <Footer />
+      </body>
+    </html>
   );
 }

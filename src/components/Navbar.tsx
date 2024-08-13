@@ -36,7 +36,9 @@ const Navbar = () => {
                     <div className="navbar-end">
                         <div >
                             <div >
-                                <button className="px-3 lg:hidden" onClick={toggleMenu}>
+                                <button 
+                                aria-label="close and open menu"
+                                className="px-3 lg:hidden" onClick={toggleMenu}>
                                     <svg
                                         className="h-10 w-10 ease-in-out duration-300"
                                         xmlns="http://www.w3.org/2000/svg"

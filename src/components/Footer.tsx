@@ -1,4 +1,4 @@
-import React from 'react'
+import SiteConfig from '@/config/site'
 
 const Footer = () => {
     return (
@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className='grid grid-cols-12 gap-4 w-full'>
                     <div className="col-span-12 md:grid-span-12 xl:col-span-6">
                         <nav>
-                            <h6 className="footer-title text-4xl font-light text-gray-50 ">About Monica</h6>
+                            <h6 className="footer-title text-4xl font-light text-gray-100 ">About {SiteConfig.name}</h6>
                             <p className='mt-2 font-bold leading-loose text-white tracking-wide pr-2 text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas illum quasi facere libero, fugiat laboriosam possimus reprehenderit eveniet vero voluptatum fugit ad quis veritatis suscipit beatae incidunt perferendis tempore earum hic repellendus quisquam recusandae ipsa id esse. Nobis, aut deleniti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere ratione dignissimos.
                             </p>
                         </nav>
@@ -16,10 +16,10 @@ const Footer = () => {
                     <div className="col-span-12 md:grid-span-6 xl:col-span-3">
                         <h6 className="footer-title text-4xl font-light text-gray-50">Services</h6>
                         <nav className='flex flex-col gap-3 pl-3'>
-                            <a className="text-white hover:text-gray-100 text-xl">Branding</a>
-                            <a className="text-white hover:text-gray-100 text-xl">Design</a>
-                            <a className="text-white hover:text-gray-100 text-xl">Marketing</a>
-                            <a className="text-white hover:text-gray-100 text-xl">Advertisement</a>
+                            <a href='#' title='branding' className="text-white hover:text-gray-100 text-xl">Branding</a>
+                            <a href='#' title='design' className="text-white hover:text-gray-100 text-xl">Design</a>
+                            <a href='#' title='marketing' className="text-white hover:text-gray-100 text-xl">Marketing</a>
+                            <a href='#' title='advertisement' className="text-white hover:text-gray-100 text-xl">Advertisement</a>
                         </nav>
                     </div>
                     <div className="col-span-12 md:grid-span-6 xl:col-span-3">
