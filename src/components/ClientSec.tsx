@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import React from 'react'
 import ClientList from './ClientList'
 
@@ -8,7 +7,7 @@ const ClientSec = () => {
             <div className='grid grid-cols-12  gap-4 md:gap-16 pb-10'>
                 <div className='col-span-12 md:col-span-6 xl:col-span-7'>
                     <section>
-                        <div className="text-yellow-600 mb-2 text-2xl">
+                        <div className="text-[#714F04] mb-2 text-2xl">
                             Clients
 
                         </div>

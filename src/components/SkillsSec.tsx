@@ -7,7 +7,7 @@ const SkillsSec = () => {
             <div className='grid grid-cols-12  gap-4 md:gap-16'>
                 <div className='col-span-12 md:col-span-6 xl:col-span-7'>
                     <section>
-                        <div className="text-[#ca8a04] mb-2 text-2xl">
+                        <div className="text-[#714F04] mb-2 text-2xl">
                             Expertise
 
                         </div>
@@ -32,7 +32,7 @@ const SkillsSec = () => {
 
                     <section className="mb-4">
                         <div className='flex items-center gap-2'>
-                            <span className="text-[#ca8a04] text-2xl pr-1" >01.</span>
+                            <span className="text-[#714F04] text-2xl pr-1" >01.</span>
                             <h1 className="text-2xl font-light  sm:text-4xl ">Frontend Developer</h1>
                         </div>
                         <p className='font-light md:font-base md:text-xl my-2'>
@@ -45,7 +45,7 @@ const SkillsSec = () => {
                     </section>
                     <section className="mb-4">
                         <div className='flex items-center gap-2'>
-                            <span className="text-[#ca8a04] text-2xl pr-1" >02.</span>
+                            <span className="text-[#714F04] text-2xl pr-1" >02.</span>
                             <h1 className="text-2xl font-light  sm:text-4xl ">Freelancerr</h1>
                         </div>
                         <p className='font-light md:font-base md:text-xl my-2'>
@@ -58,7 +58,7 @@ const SkillsSec = () => {
                     </section>
                     <section className="mb-4">
                         <div className='flex items-center gap-2'>
-                            <span className="text-[#ca8a04] text-2xl pr-1" >03.</span>
+                            <span className="text-[#714F04] text-2xl pr-1" >03.</span>
                             <h1 className="text-2xl font-light  sm:text-4xl ">Content Creator</h1>
                         </div>
                         <p className='font-light md:font-base md:text-xl my-2'>
