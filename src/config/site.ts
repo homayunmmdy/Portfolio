@@ -1,5 +1,6 @@
 interface ConfigType {
   name: string;
+  title : string;
   description: string;
   keywords: string[];
   siteURL: string;
@@ -15,7 +16,8 @@ interface ConfigType {
 
 const SiteConfig: ConfigType = {
   name: "Homayoun",
-  description: "Endless learning the journey of discovering new things",
+  title : "Homayoun Mohammadi Frontend Developer (Reactjs)",
+  description: "Frontend Developer skilled in creating or improving websites that fullfit customers needs. Proficient in the design , testing and mainteance of web.  ",
   keywords: [
     "homayunmmdy",
     "Homayoun Mohammadi",

@@ -1,7 +1,16 @@
 
 import PageDescription from "@/components/PageDescription";
 import PageTitle from "@/components/PageTitle";
+import SiteConfig from "@/config/site";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: `${SiteConfig.title} | about page`,
+  alternates: {
+    canonical: `${SiteConfig.siteURL}about`,
+  },
+};
 
 const About = () => {
   return (

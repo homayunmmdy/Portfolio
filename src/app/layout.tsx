@@ -10,10 +10,13 @@ import SiteConfig from "@/config/site";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: SiteConfig.name,
+  title: SiteConfig.title,
   description: SiteConfig.description,
   keywords: SiteConfig.keywords,
   authors: SiteConfig.author,
+  alternates: {
+    canonical: SiteConfig.siteURL,
+  },
 };
 
 export default function RootLayout({
