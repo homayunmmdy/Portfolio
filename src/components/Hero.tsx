@@ -19,7 +19,7 @@ const Hero = () => {
               </div>
             </div>
             <div className="w-full md:w-[50%]">
-              <div className="flex items-end md:justify-end">
+              <div className="flex items-end justify-center md:justify-end">
                 <div className="hidden md:block left-[-3rem] bottom-[0%] z-10	 w-full">
                   <hr className="border-yellow-600 h-[2px] w-full my-4" />
                   <hr className="border-yellow-600 h-[2px] w-full my-4" />

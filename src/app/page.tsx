@@ -1,7 +1,7 @@
 import About from "@/components/About";
 import SkillSection from "@/components/SkillSection";
 import Hero from "@/components/Hero";
-import SkillsSec from "@/components/SkillsSec";
+import Experience from "@/components/Experience";
 
 const Home = () => {
   return (
@@ -18,7 +18,7 @@ const Home = () => {
         </div>
       </div>
       <div className="px-5 w-[98%] md:w-[92%] mx-auto">
-        <SkillsSec />
+        <Experience />
       </div>
       <div style={{ background: "hsla(39, 93%, 95%, 1)" }}>
         <div className="px-5 w-[98%] md:w-[92%] mx-auto">

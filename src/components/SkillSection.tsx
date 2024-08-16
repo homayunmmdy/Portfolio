@@ -11,7 +11,7 @@ const SkillSection = () => {
               Technical skills
             </div>
             <h1 className="text-3xl text-center font-light  sm:text-4xl md:text-6xl tracking-wide leading-loose">
-              Programmering is not about what you know it is about what can
+              Programmering is not about what you know, it is about what can you
               figure out.
             </h1>
           </section>
