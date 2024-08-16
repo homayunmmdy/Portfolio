@@ -13,7 +13,7 @@ const Contacts = () => {
           <div className="grid grid-cols-12  gap-4 md:gap-8">
             <div className="col-span-12 md:col-span-6 xl:col-span-7">
               <section>
-                <h1 className="text-5xl font-light text-black  sm:text-6xl md:text-8xl tracking-wide racking-wide">
+                <h1 className="text-5xl text-center font-light text-black  sm:text-6xl md:text-8xl tracking-wide racking-wide">
                   Let us take your business to the next level.
                 </h1>
               </section>

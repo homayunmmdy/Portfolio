@@ -22,7 +22,7 @@ export const ProjectData: ProjectType[] = [
       "Nexca is your go-to platform for creating powerful admin panels.",
     github: "https://github.com/homayunmmdy/Nexca",
     demo: "https://nexca.vercel.app/",
-    imgURL: "https://i.imgur.com/vcf7Yka.png",
+    imgURL: "/projects/img1.png",
     files: {
       type: 3,
       file: "https://github.com/homayunmmdy/Nexca/releases",
@@ -38,7 +38,7 @@ export const ProjectData: ProjectType[] = [
       "Magnitify Master AI, Wealth, and Self-Improvement to Unlock Your Superpowers",
     github: "https://github.com/homayunmmdy/Magnitify",
     demo: "https://magnitify.vercel.app/",
-    imgURL: "https://i.imgur.com/jW06xk1.png",
+    imgURL: "/projects/img2.png",
     files: {
       type: 3,
       file: "https://magnitify.vercel.app/",
@@ -55,7 +55,7 @@ export const ProjectData: ProjectType[] = [
       "The Ticket System is a web-based application designed to manage and track tickets efficiently",
     github: "https://github.com/homayunmmdy/Ticket-System",
     demo: "https://ticket-system-beta.vercel.app/",
-    imgURL: "https://i.imgur.com/nq5rXpq.png",
+    imgURL: "/projects/img3.png",
     files: {
       type: 3,
       file: "https://ticket-system-beta.vercel.app/",
@@ -71,7 +71,7 @@ export const ProjectData: ProjectType[] = [
       "The template is designed to be a sleek and modern starting point for creating an online fashion store.",
     github: "https://github.com/homayunmmdy/Fashion-Ecommerce",
     demo: "https://fashion-ecommerce-omega.vercel.app/",
-    imgURL: "https://i.imgur.com/Z04vmvl.png",
+    imgURL: "/projects/img4.png",
     files: {
       type: 2,
       file: "https://private-user-images.githubusercontent.com/129702378/358190861-1a38da03-9d06-4f6b-af82-72b1c951a4a7.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjM3MTcwMzgsIm5iZiI6MTcyMzcxNjczOCwicGF0aCI6Ii8xMjk3MDIzNzgvMzU4MTkwODYxLTFhMzhkYTAzLTlkMDYtNGY2Yi1hZjgyLTcyYjFjOTUxYTRhNy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwODE1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDgxNVQxMDEyMThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05OGFlNDlmNWNjZDBlZWY4OGY0NTU4MDkxMDhhZTgyYTg0NWE4NzEwOTdkOGE4OGFkMGQyNGQ3ZTNhNzgxZGNlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.o12M46-RSLZshSPVZR9-hS6AkJ4gP2VJC9NaH8hV1H8",
@@ -87,7 +87,7 @@ export const ProjectData: ProjectType[] = [
       "Welcome to GameExplorer, a dynamic game project that fetches data from the RWAG (Real World Arcade Games) API and presents it with an eye-catching UI",
     github: "https://github.com/homayunmmdy/GameExplorer",
     demo: "https://bugify.netlify.app/",
-    imgURL: "https://i.imgur.com/zpypO8L.png",
+    imgURL: "/projects/img5.png",
     files: {
       type: 1,
       file: "https://private-user-images.githubusercontent.com/129702378/299842146-54abfb2a-7c20-479f-8dc4-38cf3217d878.webm?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjM3MTgzNzMsIm5iZiI6MTcyMzcxODA3MywicGF0aCI6Ii8xMjk3MDIzNzgvMjk5ODQyMTQ2LTU0YWJmYjJhLTdjMjAtNDc5Zi04ZGM0LTM4Y2YzMjE3ZDg3OC53ZWJtP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDgxNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA4MTVUMTAzNDMzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MDA0MTI5ZTM4YjVmZWQyNWMxYWVkODQwYzAxYWQ2M2U4MTJkODE3ZWFlNGQwZDU0NDRhZjYwNzBkMzcwMWMyMiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.jleJakD3dTU8cGnz_i0uX9nBtruk3vwG_cmgUFkWlr8",
@@ -103,7 +103,7 @@ export const ProjectData: ProjectType[] = [
       "It allows users to track their expenses by adding, editing, and deleting and see detail items, and displays the t…",
     github: "https://github.com/homayunmmdy/Bugify",
     demo: "https://bugify.netlify.app/",
-    imgURL: "https://i.imgur.com/5ZQ5GGu.png",
+    imgURL: "/projects/img6.png",
     files: {
       type: 1,
       file: "https://private-user-images.githubusercontent.com/129702378/357979508-ffadf2a8-f5b7-420f-b3db-766a62646d02.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjM2NjUxNTEsIm5iZiI6MTcyMzY2NDg1MSwicGF0aCI6Ii8xMjk3MDIzNzgvMzU3OTc5NTA4LWZmYWRmMmE4LWY1YjctNDIwZi1iM2RiLTc2NmE2MjY0NmQwMi5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwODE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDgxNFQxOTQ3MzFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yNDZiZjQ2YjhkM2EzMTRjZGNlYTUwNzI3YjdkNmY1ZmYwMDc4NWI0NTk5ZDJiOWRiZDg1YWE2YzhhOTZmOGIzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.tpWK2IZfI-VJcgGH0I0nfQJRRnPY3S3gtNOKbR_YwyM",
@@ -119,7 +119,7 @@ export const ProjectData: ProjectType[] = [
       "It allows users to customize various parameters of a box-shadow such as Horizontal and Vertical offset, Blur, Spread, Color, Opacity, and Inset.",
     github: "https://github.com/homayunmmdy/Box-shadow-generator",
     demo: "https://box-shadow-generator-1.netlify.app/",
-    imgURL: "https://i.imgur.com/jvqb1Qd.png",
+    imgURL: "/projects/img7.png",
     files: {
       type: 1,
       file: "https://private-user-images.githubusercontent.com/129702378/304180503-7be6a93f-66cb-482a-9706-6406a5a9d414.webm?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjM2NTUyMDUsIm5iZiI6MTcyMzY1NDkwNSwicGF0aCI6Ii8xMjk3MDIzNzgvMzA0MTgwNTAzLTdiZTZhOTNmLTY2Y2ItNDgyYS05NzA2LTY0MDZhNWE5ZDQxNC53ZWJtP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDgxNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA4MTRUMTcwMTQ1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YTA1ZmJlZWE3ZGIzYTQxZjBiN2ZlMjJkNzU3M2MxNzVlMTRjYzY4ZDFmMjQ4NmQyYTVjZGUyYjFkMTEwMjBmZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.RkJvxUuK6_vJfpligRx7XtA0WpPvMrKmBeFj8AMbmAM0",
@@ -135,7 +135,7 @@ export const ProjectData: ProjectType[] = [
       "Agnacy is a single-page website template designed with a clean and modern aesthetic. ",
     github: "https://github.com/homayunmmdy/Agnacy",
     demo: "https://agnacy.vercel.app/",
-    imgURL: "https://i.imgur.com/jnRGGep.png",
+    imgURL: "/projects/img8.png",
     files: {
       type: 2,
       file: "https://private-user-images.githubusercontent.com/129702378/357932162-078c5a07-1877-4e75-8d8d-70790a721f71.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjM2NTY3MjEsIm5iZiI6MTcyMzY1NjQyMSwicGF0aCI6Ii8xMjk3MDIzNzgvMzU3OTMyMTYyLTA3OGM1YTA3LTE4NzctNGU3NS04ZDhkLTcwNzkwYTcyMWY3MS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwODE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDgxNFQxNzI3MDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04OTM2NjAzNmQ4YWUxNTUwZDNkM2ZkNTBiNjM4YjZkNWUwNTFkYThkOGU3ZmEzNmY4YzllNTIzODE5Mzc1YWJhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.9C5MLDbs34WoBq-H02SLnIZsshypC1rX3TRlZdxGF8M",
@@ -151,12 +151,28 @@ export const ProjectData: ProjectType[] = [
       "It allows users to dynamically generate CSS color gradients and customize their orientation.",
     github: "https://github.com/homayunmmdy/Gradient-Generator",
     demo: "https://gradient-generatoroz.vercel.app/",
-    imgURL: "https://i.imgur.com/4OAVtec.png",
+    imgURL: "/projects/img9.png",
     files: {
       type: 1,
       file: "https://private-user-images.githubusercontent.com/129702378/306074348-20c95033-4c6d-42c8-ad8c-d8902c51af0a.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjM2NTQxOTcsIm5iZiI6MTcyMzY1Mzg5NywicGF0aCI6Ii8xMjk3MDIzNzgvMzA2MDc0MzQ4LTIwYzk1MDMzLTRjNmQtNDJjOC1hZDhjLWQ4OTAyYzUxYWYwYS5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwODE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDgxNFQxNjQ0NTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01OTUyOWZlOGNjMzAzNTg1ODdhMDA5Njk4MzgyMDYzYjExMWMwMzVkODM4ZGRjNDkzNTY4OGUzMWRjOTVhYjgyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.qdkFQgEwamGfblTdpR8JxOo3O-pfh3zKRj2YD-nu6OU",
     },
     type: "CSS Tool",
     body: "This project is a gradient generator built using Vite, React, and TypeScript. if you want to see the live demo click the link and for contribution see hour github for more information about that",
+  },
+  {
+    id: 10,
+    projectId: 10,
+    title: "blogg",
+    description:
+      "Blogg is a modern, lightweight blog platform built with React, TypeScript, Tailwind CSS, and DaisyUI.",
+    github: "https://github.com/homayunmmdy/Blogg",
+    demo: "https://bloggtemplate.netlify.app/",
+    imgURL: "/projects/img10.png",
+    files: {
+      type: 2,
+      file: "https://private-user-images.githubusercontent.com/129702378/358621845-b5f9f99b-7b25-49ce-82aa-de839ce788fd.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjM4NDMyMzcsIm5iZiI6MTcyMzg0MjkzNywicGF0aCI6Ii8xMjk3MDIzNzgvMzU4NjIxODQ1LWI1ZjlmOTliLTdiMjUtNDljZS04MmFhLWRlODM5Y2U3ODhmZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwODE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDgxNlQyMTE1MzdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00MTEyNGU4NTdmMjZmYzQyNmU4YzQ2MDJjMjZmZDZiOWEzZDA1NGYwMmVmNmM0Mzk0ODQ5M2MzMWJmOGFjMWVhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.DIBRKZJCL2__25eMRsAJY40YpmrRdQ9VUc8MZBX9zaE",
+    },
+    type: "Template",
+    body: "It allows to use ready compoenets for your blog project.",
   },
 ];
