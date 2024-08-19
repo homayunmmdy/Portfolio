@@ -1,12 +1,23 @@
 import PageTitle from "@/components/PageTitle";
+import SiteConfig from "@/config/site";
+import { Metadata } from "next";
 import Link from "next/link";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaGithub, FaRegNewspaper } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 
+export const metadata: Metadata = {
+  title: `${SiteConfig.title} | contacts page`,
+  alternates: {
+    canonical: `${SiteConfig.siteURL}contacts`,
+  },
+};
+
+
 const Contacts = () => {
   return (
     <div>
+      <h1 className="hidden">{`${SiteConfig.siteURL}contacts`}</h1>
       <PageTitle titr="Contacts" title="Get In Touch" />
       <div className="px-5 w-[98%] md:w-[92%] mx-auto">
         <div className=" py-12 sm:py-36">

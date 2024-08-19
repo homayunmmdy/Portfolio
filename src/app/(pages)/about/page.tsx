@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const About = () => {
   return (
     <div>
-      <h1>{`${SiteConfig.siteURL}about`}</h1>
+      <h1 className="hidden">{`${SiteConfig.siteURL}about`}</h1>
       <PageTitle titr="About" title="Hi I&apos;m Homayoun" />
       <div className='px-5 w-[98%] md:w-[92%] mx-auto'>
         <PageDescription 

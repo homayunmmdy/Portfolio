@@ -1,11 +1,13 @@
 import About from "@/components/About";
-import SkillSection from "@/components/SkillSection";
-import Hero from "@/components/Hero";
 import Experience from "@/components/Experience";
+import Hero from "@/components/Hero";
+import SkillSection from "@/components/SkillSection";
+import SiteConfig from "@/config/site";
 
 const Home = () => {
   return (
     <>
+      <h1 className="hidden">{SiteConfig.title}</h1>
       <div
         style={{
           background:

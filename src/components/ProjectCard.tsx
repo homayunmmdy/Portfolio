@@ -16,14 +16,14 @@ const ProjectCard = ({ data }: { data: ProjectType }) => {
           <span className="text-[#714F04] text-2xl pr-1">{data.id}.</span>
           {data.demo ? (
             <Link href={data.demo}>
-              <h1 className="text-2xl font-light  sm:text-4xl hover:text-[#714F04]">
+              <h3 className="text-2xl font-light  sm:text-4xl hover:text-[#714F04]">
                 {data.title}
-              </h1>
+              </h3>
             </Link>
           ) : (
-            <h1 className="text-2xl font-light  sm:text-4xl hover:text-[#714F04]">
+            <h3 className="text-2xl font-light  sm:text-4xl hover:text-[#714F04]">
               {data.title}
-            </h1>
+            </h3>
           )}
         </div>
       </div>

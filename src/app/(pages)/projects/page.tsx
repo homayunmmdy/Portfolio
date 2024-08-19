@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 const ProjectsPage = () => {
   return (
     <>
+    <h1 className="hidden">{`${SiteConfig.title} | projects page`}</h1>
       <PageTitle titr="My projects" title="Recent Projects" />
       <div className="px-5 w-[98%] md:w-[92%] mx-auto py-12">
         <Projects />

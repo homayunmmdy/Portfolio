@@ -30,9 +30,9 @@ const Experience = () => {
             <div className="text-[#714F04] mb-2 text-2xl">
               March 2023- Present (1yr 6 mos)
             </div>
-            <h1 className="text-4xl font-light  sm:text-5xl md:text-7xl tracking-wide">
+            <h2 className="text-4xl font-light  sm:text-5xl md:text-7xl tracking-wide">
               Iransamaneh
-            </h1>
+            </h2>
             <p className=" leading-relaxed text-2xl my-3 ">
               one of the largest news companies, specializing in the development
               website with CMS news admin panel for news media and news

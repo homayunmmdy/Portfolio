@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 const Hero = () => {
-
   return (
     <div>
       <div className="h-full w-full">
@@ -10,12 +9,12 @@ const Hero = () => {
             <div className="w-full md:w-[49%]">
               <div>
                 <div className="text-white relative mb-2">
-                  <h2 className="text-2xl">Hello, I am Homayoun</h2>
+                  <h3 className="text-2xl">Hello, I am Homayoun</h3>
                   <hr className="border-yellow-600	absolute w-8 left-[-3rem] top-[50%] h-[1px]" />
                 </div>
-                <h1 className="text-5xl font-light  sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-wide leading-relaxed text-white">
+                <h2 className="text-5xl font-light  sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-wide leading-relaxed text-white">
                   Frontend Developer
-                </h1>
+                </h2>
               </div>
             </div>
             <div className="w-full md:w-[50%]">
