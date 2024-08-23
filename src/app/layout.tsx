@@ -13,12 +13,13 @@ export const metadata: Metadata = {
   title: SiteConfig.title,
   description: SiteConfig.description,
   keywords: SiteConfig.keywords,
+  publisher: SiteConfig.name,
   authors: SiteConfig.author,
   robots: "index, follow",
   verification: {
     google: "KEW2K6gHlUqeWRDxOY39arw_0ZD47OKapZN1bBZI1Go",
   },
-    openGraph: {
+  openGraph: {
     title: SiteConfig.name,
     description: SiteConfig.description.slice(0, 160),
     siteName: SiteConfig.name,

@@ -1,24 +1,31 @@
-import type { MetadataRoute } from 'next'
- 
-export default function sitemap(): MetadataRoute.Sitemap {
+import { getPostsSitemap } from "@/util/mdxUtils";
+import type { MetadataRoute } from "next";
+
+const BASE_URL = "https://homayunmmdy.vercel.app";
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const posts = await getPostsSitemap();
+
   return [
     {
-      url: 'https://homayunmmdy.vercel.app',
+      url: BASE_URL,
       lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 1,
     },
     {
-      url: 'https://homayunmmdy.vercel.app/about',
+      url: BASE_URL + "/blogs",
       lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
+    },
+    ...posts.map((post) => ({
+      url: `${BASE_URL}/blogs/${post.slug}`,
+      lastModified: post.mtime,
+    })),
+    {
+      url: "https://homayunmmdy.vercel.app/about",
+      lastModified: new Date(),
     },
     {
-      url: 'https://homayunmmdy.vercel.app/projects',
+      url: "https://homayunmmdy.vercel.app/projects",
       lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.5,
     },
-  ]
+  ];
 }

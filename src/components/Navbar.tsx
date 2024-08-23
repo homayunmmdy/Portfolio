@@ -78,7 +78,7 @@ const Navbar = () => {
                                 <Link href={item.link} className="font-light text-gray-400 hover:text-gray-50 text-xl">{item.name}</Link>}
                         </li>
                     ))}
-                    <li className="w-full">
+                    <li className="w-full pb-2">
                         <WorkBtn />
                     </li>
                 </ul>)}
