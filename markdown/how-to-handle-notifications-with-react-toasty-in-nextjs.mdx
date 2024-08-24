@@ -1,0 +1,51 @@
+---
+title: "How to Handle Notifications with React Toasty in Next.js"
+description: "Notifications are vital for any web application, offering users valuable information and feedback. This tutorial delves into managing notifications within a Next.js application using React Toasty, a lightweight and customizable notification library."
+date: "May 8 2024"
+categories: ['nextjs' ,'toasty' ,'notification' ,'notice']
+imgURL: https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fauy5uyb2s8rfwxch0pn4.png
+---
+
+Notifications are vital for any web application, offering users valuable information and feedback. This tutorial delves into managing notifications within a Next.js application using React Toasty, a lightweight and customizable notification library.
+
+<H2 text="Step 1: Install React Toasty"/>
+
+
+Begin by installing React Toasty and its dependencies. Open your terminal and execute the following command:
+
+<Code code="npm install react-toastify"/>
+
+
+<H2 text="Step 2: Import React Toasty"/>
+
+Next, import React Toasty into your Next.js component where you intend to display notifications:
+
+
+<Code code={`
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+`}/>
+
+
+<H2 text="Step 3: Initialize React Toasty"/>
+
+Within your component's render method, incorporate the Toasty component to showcase notifications:
+
+
+<Code code={`
+function App(){
+    const notify = () => toast("Wow, so easy!");
+
+    return (
+      <div>
+        <button onClick={notify}>Notify!</button>
+        <ToastContainer />
+      </div>
+    );
+  }
+`}/>
+
+
+<H2 text="Step 4: Customize Notifications"/>
+
+React Toasty provides extensive customization options to seamlessly integrate notifications with your application's design. You have the flexibility to adjust various aspects such as icons and positioning to suit your specific requirements. I highly recommend exploring these options. If you have any questions, feel free to ask in the comments. Thank you for your time, and I look forward to seeing you soon!

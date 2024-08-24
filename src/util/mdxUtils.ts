@@ -1,12 +1,9 @@
-import CodeMockup from "@/app/(pages)/blogs/components/CodeMockup";
+import { MDXCode, MDXH2, MDXImage, MDXLink } from "@/app/(pages)/blogs/components";
 import { PostsFrontmatter } from "@/types/entities";
 import fsp from "fs/promises";
 import { compileMDX } from "next-mdx-remote/rsc";
 import path from "path";
 import { cache } from "react";
-import MDXLink from "../app/(pages)/blogs/components/MDXLink";
-import MDXImage from "../app/(pages)/blogs/components/MDXImage";
-import MDXH2 from "../app/(pages)/blogs/components/MDXH2";
 
 const POSTS_PATH = path.join(process.cwd(), "markdown");
 
@@ -23,7 +20,7 @@ export const getCompiledMDX = cache(async (postSlug: string) => {
   return compileMDX<PostsFrontmatter>({
     source,
     options: { parseFrontmatter: true },
-    components: { Code: CodeMockup, Link: MDXLink, Image: MDXImage, H2: MDXH2 },
+    components: { Code: MDXCode, Link: MDXLink, Image: MDXImage, H2: MDXH2 },
   });
 });
 

@@ -31,10 +31,18 @@ const PageTitle: React.FC<PageTitleType> = ({
             )}
             {categories && (
               <div className="flex text-xl gap-2 text-white">
-                <CiFolderOn className="hidden md:block" size={23} color="#714F04" />
+                <CiFolderOn
+                  className="hidden md:block"
+                  size={23}
+                  color="#714F04"
+                />
                 <ul className="flex flex-wrap md:flex-nowrap justify-center gap-2">
                   {categories.map((category, index) => (
-                    <li key={index}>{category} &#44;</li>
+                    <li key={index}>
+                      {index === categories.length - 1
+                        ? category
+                        : `${category} ,`}
+                    </li>
                   ))}
                 </ul>
               </div>
