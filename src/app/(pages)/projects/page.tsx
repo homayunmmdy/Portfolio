@@ -10,6 +10,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${SiteConfig.siteURL}projects`,
   },
+  openGraph: {
+    images: {
+      url: `${SiteConfig.siteURL}projects.jpg`,
+      secureUrl: `${SiteConfig.siteURL}projects.jpg`,
+      width: 1200,
+      height: 630,
+      alt: "Preview image for Projects",
+    },
+  },
 };
 
 const ProjectsPage = () => {

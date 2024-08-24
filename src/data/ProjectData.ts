@@ -86,7 +86,7 @@ export const ProjectData: ProjectType[] = [
     description:
       "Welcome to GameExplorer, a dynamic game project that fetches data from the RWAG (Real World Arcade Games) API and presents it with an eye-catching UI",
     github: "https://github.com/homayunmmdy/GameExplorer",
-    demo: "https://bugify.netlify.app/",
+    demo: "https://game-explorer-beta.netlify.app/",
     imgURL: "/projects/img5.png",
     files: {
       type: 1,
