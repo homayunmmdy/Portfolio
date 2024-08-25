@@ -1,11 +1,15 @@
+import { SocialMedia } from "@/types/entities";
+import Link from "next/link";
 import React from "react";
 
 const PageDescription = ({
   title,
   description,
+  media,
 }: {
   title: string;
   description: string;
+  media?: SocialMedia[];
 }) => {
   return (
     <div className=" py-12 sm:py-36">
@@ -22,6 +26,18 @@ const PageDescription = ({
             <p className="font-light md:font-base md:text-3xl my-2  leading-relaxed">
               {description}
             </p>
+            <ul className="flex justify-center gap-4 mt-10">
+              {media?.map((link: SocialMedia, index: number) => {
+                const LinkIcon = link.icon;
+                return (
+                  <li key={index}>
+                    <Link title={link.name} href={link.href}>
+                      <LinkIcon size={28} className="hover:text-[#714F04]" />
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ const experiences = [
   },
   {
     experience:
-      "Worked closely with UI/UX team to redesign or design websites like Razebaghaa , Nabzenaft , Shahraranews",
+      "Worked closely with UI/UX team to redesign or design websites like Razebaghaa , Zisaan , Shahraranews",
   },
   {
     experience:

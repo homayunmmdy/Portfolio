@@ -1,3 +1,5 @@
+import { IconType } from "react-icons";
+
 export type PostsFrontmatter = {
   title: string;
   description: string;
@@ -12,3 +14,9 @@ export interface PageTitleType {
   date?:string;
   categories? : string[];
 }
+
+export interface SocialMedia {
+  name : string;
+  href: string;
+  icon: IconType
+};

@@ -2,12 +2,10 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "./Font.css";
-import Footer from "@/components/Footer";
-import GetStarted from "@/components/GetStarted";
-import Navbar from "@/components/Navbar";
 import SiteConfig from "@/config/site";
 import { Suspense } from "react";
 import Loading from "./loading";
+import { Footer, GetStarted, Navbar } from "@/components";
 
 const inter = Inter({ subsets: ["latin"] });
 

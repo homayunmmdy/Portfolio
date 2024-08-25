@@ -1,7 +1,4 @@
-import About from "@/components/About";
-import Experience from "@/components/Experience";
-import Hero from "@/components/Hero";
-import SkillSection from "@/components/SkillSection";
+import { About, Experience, Hero, SkillSection } from "@/components";
 import SiteConfig from "@/config/site";
 
 const Home = () => {

@@ -1,9 +1,8 @@
-import PageTitle from "@/components/PageTitle";
-import Cards from "@/components/Cards";
 import SiteConfig from "@/config/site";
 import { Metadata } from "next";
 import React from "react";
 import { ProjectData, ProjectType } from "@/data/ProjectData";
+import { Cards, PageTitle } from "@/components";
 
 export const metadata: Metadata = {
   title: `${SiteConfig.title} | projects page`,

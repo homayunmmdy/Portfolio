@@ -1,5 +1,4 @@
-import PageDescription from "@/components/PageDescription";
-import PageTitle from "@/components/PageTitle";
+import { PageDescription, PageTitle } from "@/components";
 import SiteConfig from "@/config/site";
 import { Metadata } from "next";
 import Image from "next/image";

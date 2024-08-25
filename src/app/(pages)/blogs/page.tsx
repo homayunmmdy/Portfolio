@@ -1,4 +1,4 @@
-import Cards from "@/components/Cards";
+import { Cards } from "@/components";
 import SiteConfig from "@/config/site";
 import { getLatestPostSummaries } from "@/util/mdxUtils";
 import { Metadata } from "next";

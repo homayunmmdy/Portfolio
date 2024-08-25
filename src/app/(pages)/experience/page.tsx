@@ -1,5 +1,4 @@
-import Experience from "@/components/Experience";
-import PageTitle from "@/components/PageTitle";
+import { Experience, PageTitle } from "@/components";
 import SiteConfig from "@/config/site";
 import { Metadata } from "next";
 
