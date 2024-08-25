@@ -26,7 +26,7 @@ const Cards = <T,>({ data }: { data: T[] }) => {
             <button
               key={i}
               className={`mx-1 px-4 py-2  ${
-                currentPage === i + 1 ? "bg-black text-white" : "bg-white"
+                currentPage === i + 1 ? "bg-[#714F04] text-white" : "bg-black text-white"
               } rounded`}
               onClick={() => handlePageChange(i + 1)}
             >

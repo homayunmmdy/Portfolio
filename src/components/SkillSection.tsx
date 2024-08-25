@@ -10,7 +10,7 @@ const SkillSection = () => {
             <div className="text-[#714F04] text-center mb-2 text-2xl">
               Technical skills
             </div>
-            <h2 className="text-3xl text-center font-light  sm:text-4xl md:text-6xl tracking-wide leading-loose">
+            <h2 className="text-3xl text-center font-light text-black sm:text-4xl md:text-6xl tracking-wide leading-loose">
               Programmering is not about what you know, it is about what can you
               figure out.
             </h2>

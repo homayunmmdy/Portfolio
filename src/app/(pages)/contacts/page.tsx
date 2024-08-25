@@ -3,7 +3,7 @@ import SiteConfig from "@/config/site";
 import { Metadata } from "next";
 import Link from "next/link";
 import { BiLogoGmail } from "react-icons/bi";
-import { FaGithub, FaRegNewspaper } from "react-icons/fa";
+import { FaDev, FaGithub, FaRegNewspaper } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 
 export const metadata: Metadata = {
@@ -12,7 +12,33 @@ export const metadata: Metadata = {
     canonical: `${SiteConfig.siteURL}contacts`,
   },
 };
-
+const links  = [
+  {
+    name: "Gmail",
+    href: "mailto:homayoun763@gmail.com",
+    icon: BiLogoGmail
+  },
+  {
+    name: "GitHub",
+    href: "https://github.com/homayunmmdy",
+    icon: FaGithub
+  },
+  {
+    name: "Linkedin",
+    href: "https://www.linkedin.com/in/homayunmmdy/",
+    icon: FaLinkedinIn
+  },
+  {
+    name: "DEV Community",
+    href: "https://dev.to/homayunmmdy",
+    icon: FaDev
+  },
+  {
+    name: "Newsletter",
+    href: "https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7146597314181193728",
+    icon: FaRegNewspaper
+  },
+];
 
 const Contacts = () => {
   return (
@@ -24,7 +50,7 @@ const Contacts = () => {
           <div className="grid grid-cols-12  gap-4 md:gap-8">
             <div className="col-span-12 md:col-span-6 xl:col-span-7">
               <section>
-                <h1 className="text-5xl text-center font-light text-black  sm:text-6xl md:text-8xl tracking-wide racking-wide">
+                <h1 className="text-5xl text-center font-light sm:text-6xl md:text-7xl lg:text-8xl tracking-wide racking-wide">
                   Let us take your business to the next level.
                 </h1>
               </section>
@@ -37,37 +63,21 @@ const Contacts = () => {
                   business into next level just contact with me on
                 </p>
                 <ul className="flex justify-center gap-4 mt-10">
-                  <li>
-                    <Link title="Gmail" href="mailto:homayoun763@gmail.com">
-                      <BiLogoGmail size={28} />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link title="GitHub" href="https://github.com/homayunmmdy">
-                      <FaGithub size={28} />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      title="Linkedin"
-                      href="https://www.linkedin.com/feed/"
-                    >
-                      <FaLinkedinIn size={28} />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      title="Newsletter"
-                      href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7146597314181193728"
-                    >
-                      <FaRegNewspaper size={28} />
-                    </Link>
-                  </li>
+                  {links.map((link, index) => {
+                    const LinkIcon = link.icon ;
+                    return (
+                      <li key={index}>
+                        <Link title={link.name} href={link.href}>
+                          <LinkIcon size={28} className="hover:text-[#714F04]"/>
+                        </Link>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             </div>
           </div>
-        </div>{" "}
+        </div>
       </div>
     </div>
   );
