@@ -6,6 +6,7 @@ const Card = ({ data }: { data: any }) => {
   return (
     <section className="mb-4 h-full">
       <div className="flex items-center flex-col gap-2">
+        <picture className="overflow-hidden block">
         {data.slug ? (
           <Link href={`/blogs/${data.slug}`}>
             <Image
@@ -14,7 +15,7 @@ const Card = ({ data }: { data: any }) => {
               width={385}
               height={216.5}
               alt={data.description.slice(0, 80)}
-              className="w-full h-full aspect-video border border-[#714F04]"
+              className="w-full h-full aspect-video border border-[#714F04] hover:scale-125 ease-in duration-300"
             />
           </Link>
         ) : (
@@ -25,10 +26,11 @@ const Card = ({ data }: { data: any }) => {
               width={385}
               height={216.5}
               alt={data.description.slice(0, 80)}
-              className="w-full h-full aspect-video border border-[#714F04]"
+              className="w-full h-full aspect-video border border-[#714F04] hover:scale-125 ease-in duration-300"
             />
           </Link>
         )}
+          </picture>
         <div className="flex items-center">
           <span className="text-[#714F04] text-2xl pr-1">{data.id}</span>
           {data.slug ? (
