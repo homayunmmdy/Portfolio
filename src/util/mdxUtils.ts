@@ -1,4 +1,4 @@
-import { MDXCode, MDXH2, MDXImage, MDXLink } from "@/app/(pages)/blogs/components";
+import { MDXBlockQuote, MDXBold, MDXCode, MDXH2, MDXImage, MDXLink } from "@/app/(pages)/blogs/components";
 import { PostsFrontmatter } from "@/types/entities";
 import fsp from "fs/promises";
 import { compileMDX } from "next-mdx-remote/rsc";
@@ -20,7 +20,7 @@ export const getCompiledMDX = cache(async (postSlug: string) => {
   return compileMDX<PostsFrontmatter>({
     source,
     options: { parseFrontmatter: true },
-    components: { Code: MDXCode, Link: MDXLink, Image: MDXImage, H2: MDXH2 },
+    components: { Code: MDXCode, Link: MDXLink, Image: MDXImage, H2: MDXH2 , Quote: MDXBlockQuote, B: MDXBold},
   });
 });
 

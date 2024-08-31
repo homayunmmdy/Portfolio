@@ -1,0 +1,138 @@
+---
+title: "You Should Know This Before Writing Your First Line of Test in Software Testing"
+description: "When it comes to software testing, the first thing to remember is that no test is better than a bad test. A bad test can slow down your entire project, causing confusion and wasted time. Writing effective tests is essential to ensure your code works as intended without introducing problems. But before you dive into writing your first line of test code, here are some principles you need to understand."
+date: "Aug 31 2024"
+categories: ["Testing", "Software Testing", "Vitest", "Principles"]
+imgURL: https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Finpxztqzac5xt1dh0qkw.jpg
+---
+
+When it comes to software testing, the first thing to remember is that no test is better than a bad test. A bad test can slow down your entire project, causing confusion and wasted time. Writing effective tests is essential to ensure your code works as intended without introducing problems. But before you dive into writing your first line of test code, here are some principles you need to understand.
+
+<H2 text="1. Test the Behavior, Not the Implementation"/>
+
+When writing tests, focus on the behavior of your application rather than its internal implementation. This means testing how the app works from a user's perspective, rather than checking how the code works behind the scenes.
+
+
+For example, if you're testing a login function, check if entering the correct username and password allows access. Don’t test the exact method the code uses to verify credentials. This way, even if the internal code changes, your test will still be valid.
+
+
+<B>Example with Vitest:</B>
+
+<Code code={`
+import { test, expect } from 'vitest';
+
+// Test the behavior, not the implementation
+test('login should succeed with correct credentials', () => {
+  const result = login('user', 'password');
+  expect(result).toBe(true);  // Focus on the result, not the process
+});
+
+`}/>
+
+
+<H2 text="2. Avoid Testing Styles"/>
+
+You should avoid testing styles or visual appearances, especially in unit tests. Styles often change over time, and testing them can lead to unnecessary failures in your test suite. Leave visual testing to tools specifically designed for that, like snapshot testing or visual regression testing tools.
+
+<H2 text="3. Optimistic, Negative, Min, and Max Testing"/>
+
+When writing tests, consider different types of scenarios:
+
+
+<B>Optimistic Testing:</B> Test that everything works as expected when the input is correct. For example, a form should submit successfully when all required fields are filled out correctly.
+
+<B>Negative Testing:</B> This involves testing how the system behaves with invalid input. For example, test that the form fails when required fields are left blank.
+
+<B>Min and Max Testing:</B> Test edge cases, like the smallest and largest possible inputs. For instance, if a field allows a minimum of 3 characters, what happens if the user enters 2? What if they enter 100 when the max is 50?
+
+
+<B>Example with Vitest:</B>
+
+<Code code={`
+test('form should submit with valid input', () => {
+  const result = submitForm({ name: 'John', age: 30 });
+  expect(result).toBe(true);  // Optimistic test
+});
+
+test('form should fail with missing required fields', () => {
+  const result = submitForm({ name: '', age: 30 });
+  expect(result).toBe(false);  // Negative test
+});
+
+test('form should fail with input below minimum length', () => {
+  const result = submitForm({ name: 'Jo', age: 30 });
+  expect(result).toBe(false);  // Min test
+});
+
+`}/>
+
+
+<H2 text="4. Loose vs. Tight Testing"/>
+
+
+<B>Loose Testing:</B> This means your tests allow some flexibility, which can be useful when certain results can vary slightly but are still acceptable. For example, if a function returns a number that can vary by a small margin, you may want to use a loose comparison.
+
+<B>Tight Testing:</B> In contrast, tight testing requires exact matches. Use this for scenarios where any deviation from the expected result is considered a failure.
+
+<B>Example with Vitest:</B>
+
+<Code code={`
+test('function should return a number close to expected value', () => {
+  const result = calculate(10);
+  expect(result).toBeCloseTo(9.8, 1);  // Loose testing
+});
+
+test('function should return exact expected value', () => {
+  const result = calculate(10);
+  expect(result).toBe(10);  // Tight testing
+});
+
+`}/>
+
+<H2 text="5. Understand Different Types of Testing"/>
+
+Before starting, familiarize yourself with the types of tests you'll encounter:
+
+
+<B>Unit Testing:</B> Tests individual components or functions in isolation. Example: testing a specific function that adds two numbers.
+
+<B>Integration Testing:</B> Tests how different components work together. Example: testing if your API can communicate with your database.
+
+<B>End-to-End Testing:</B> Tests the entire system as a whole, simulating real user interactions. Example: testing the entire checkout process on an e-commerce website.
+
+<B>Regression Testing:</B> Ensures that recent changes haven’t broken existing functionality. Example: after fixing a bug, you run your tests again to make sure nothing else was affected.
+
+
+<H2 text="6. Test for Different Scenarios"/>
+
+Make sure your tests cover a range of scenarios:
+
+
+<B>Happy Path:</B> This is the scenario where everything works as expected. It’s the ideal situation.
+
+<B>Edge Cases:</B> These are unusual inputs that test the limits of your application.
+
+<B>Error Handling:</B> Test how your application behaves when things go wrong. What if the server is down? What if the user input is completely unexpected?
+
+
+<B>Example with Vitest:</B>
+
+<Code code={`
+test('handles valid input correctly (happy path)', () => {
+  const result = processInput('valid data');
+  expect(result).toBe('success');
+});
+
+test('handles unexpected input gracefully (edge case)', () => {
+  const result = processInput('');
+  expect(result).toBe('error');
+});
+
+`}/>
+
+
+<H2 text="Conclusion"/>
+
+Writing effective tests in software development is crucial to ensure your code behaves as expected and continues to work as your project grows. Remember, it's better not to test at all than to write bad tests. Focus on testing behavior, not implementation, and be mindful of different testing strategies, including optimistic, negative, min/max, and loose/tight testing. Understanding these principles before writing your first test can save you time and frustration in the long run.
+
+By keeping these tips in mind, you'll be ready to write tests that are reliable, maintainable, and useful to your project's success.
