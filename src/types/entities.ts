@@ -20,3 +20,14 @@ export interface SocialMedia {
   href: string;
   icon: IconType
 };
+
+export type PostsCashType = {
+  _id: string;
+  title: string;
+  imgurl: string;
+  description: string;
+  body: string;
+  createdAt: string;
+  updatedAt: string;
+  __v: number;
+};
