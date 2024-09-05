@@ -6,6 +6,7 @@ import SiteConfig from "@/config/site";
 import { Suspense } from "react";
 import Loading from "./loading";
 import { Footer, GetStarted, Navbar } from "@/components";
+import ReactQueryProvider from "@/components/ReactQueryProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -53,17 +54,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang={SiteConfig.lang} dir={SiteConfig.dir}>
-      <body className={inter.className}>
-        <Navbar />
-        <Suspense fallback={<Loading />}>{children}</Suspense>
-        <div style={{ background: "hsla(127, 8%, 14%, 1)" }}>
-          <div className="px-5 w-[98%] md:w-[92%] mx-auto">
-            <GetStarted />
+    <ReactQueryProvider>
+      <html lang={SiteConfig.lang} dir={SiteConfig.dir}>
+        <body className={inter.className}>
+          <Navbar />
+          <Suspense fallback={<Loading />}>{children}</Suspense>
+          <div style={{ background: "hsla(127, 8%, 14%, 1)" }}>
+            <div className="px-5 w-[98%] md:w-[92%] mx-auto">
+              <GetStarted />
+            </div>
           </div>
-        </div>
-        <Footer />
-      </body>
-    </html>
+          <Footer />
+        </body>
+      </html>
+    </ReactQueryProvider>
   );
 }
