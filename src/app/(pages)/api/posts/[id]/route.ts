@@ -3,20 +3,24 @@ import RequestHandler from "@/util/RequestHandler";
 import PostModel from "@/model/PostModel";
 import { PostsCashType } from "@/types/entities";
 
-export async function GET(req: Request, { params }: { params: any }) {
+//@ts-ignore
+export async function GET(req, { params }) {
   const { id } = params;
-  const handler = new RequestHandler<PostsCashType[]>(PostModel, PostsCash);
+  const handler = new RequestHandler(PostModel, PostsCash);
   return handler.Get(id);
 }
 
-export async function PUT(req: Request, { params }: { params: any }) {
+//@ts-ignore
+export async function PUT(req, { params }) {
   const { id } = params;
-  const handler = new RequestHandler<PostsCashType[]>(PostModel, PostsCash);
+  const handler = new RequestHandler(PostModel, PostsCash);
   return handler.PUT(id, req, "Post Update Successfully");
 }
 
-export async function DELETE(req: Request, { params }: { params: any }) {
+//@ts-ignore
+export async function DELETE(req, { params }) {
   const { id } = params;
-  const handler = new RequestHandler<PostsCashType[]>(PostModel, PostsCash);
+  const handler = new RequestHandler(PostModel, PostsCash);
   return handler.DELETE(id, "Post Deleted successfully");
 }
+

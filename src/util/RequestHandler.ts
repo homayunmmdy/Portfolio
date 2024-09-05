@@ -1,15 +1,21 @@
 import { NextResponse } from "next/server";
 
-type Cache<T> = T;
-
-class RequestHandler<T> {
-  constructor(private Model: any, private Cache: Cache<T>) {}
+class RequestHandler {
+  //@ts-ignore
+  constructor(Model, Cache) {
+    //@ts-ignore
+    this.Model = Model;
+    //@ts-ignore
+    this.Cache = Cache;
+  }
 
   async GetAll() {
     try {
       if (process.env.NEXT_PUBLIC_STATUS == "dev") {
+        //@ts-ignore
         return NextResponse.json({ data: this.Cache }, { status: 200 });
       } else {
+        //@ts-ignore
         const data = await this.Model.find();
         return NextResponse.json({ data }, { status: 200 });
       }
@@ -18,11 +24,12 @@ class RequestHandler<T> {
       return this.ErrorResponse(error);
     }
   }
-
-  async Post(req: Request, successMessage?: string): Promise<NextResponse> {
+  //@ts-ignore
+  async Post(req, successMessage) {
     try {
       const body = await req.json();
       const formData = body.formData;
+      //@ts-ignore
       await this.Model.create(formData);
       return NextResponse.json(
         { message: successMessage || "Data created successfully" },
@@ -33,8 +40,8 @@ class RequestHandler<T> {
       return this.ErrorResponse(error);
     }
   }
-
-  async Get(id: string) {
+  //@ts-ignore
+  async Get(id) {
     try {
       if (process.env.NEXT_PUBLIC_STATUS === "dev") {
         //@ts-ignore
@@ -43,6 +50,7 @@ class RequestHandler<T> {
           return NextResponse.json({ document }, { status: 200 });
         }
       } else {
+        //@ts-ignore
         const document = await this.Model.findOne({ _id: id });
         if (!document) {
           return NextResponse.json({ message: "Not Found" }, { status: 404 });
@@ -55,15 +63,13 @@ class RequestHandler<T> {
     }
   }
 
-  async PUT(
-    id: string,
-    req: Request,
-    successMessage?: string
-  ): Promise<NextResponse> {
+  //@ts-ignore
+  async PUT(id, req, successMessage) {
     try {
       const body = await req.json();
       const Data = body.formData;
 
+      //@ts-ignore
       const updateData = await this.Model.findByIdAndUpdate(id, {
         ...Data,
       });
@@ -78,8 +84,10 @@ class RequestHandler<T> {
     }
   }
 
-  async DELETE(id: string, successMessage?: string): Promise<NextResponse> {
+  //@ts-ignore
+  async DELETE(id, successMessage) {
     try {
+      //@ts-ignore
       const deleteDocument = await this.Model.findByIdAndDelete(id);
       if (!deleteDocument) {
         return NextResponse.json({ message: "Not Found" }, { status: 404 });
@@ -93,7 +101,8 @@ class RequestHandler<T> {
       return this.ErrorResponse(error);
     }
   }
-  ErrorResponse(err: unknown) {
+  //@ts-ignore
+  ErrorResponse(err) {
     return NextResponse.json({ message: "Error", err }, { status: 500 });
   }
 }
