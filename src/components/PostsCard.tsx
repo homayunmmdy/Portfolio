@@ -6,6 +6,7 @@ import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
 import DeleteBlock from "./DeleteBlock";
+import { CiEdit } from "react-icons/ci";
 
 const PostsCard = () => {
   const { data: posts, isLoading } = useQuery<PostsCashType[]>({
@@ -26,6 +27,13 @@ const PostsCard = () => {
   return (
     <>
       <div className="p-4">
+        {isAuth === true ?(
+        <div className="w-full flex justify-center my-3">
+         <Link className="btn btn-neutral" href="/post/new">
+            Create New Post
+          </Link>
+        </div>
+        ): null}
         {/* @ts-ignore */}
         {posts?.data?.map((post) => (
           <article
@@ -59,7 +67,18 @@ const PostsCard = () => {
               </div>
               <div className="sm:flex gap-2 sm:items-end sm:justify-end">
                 {isAuth === true ? (
-                  <DeleteBlock path="posts" id={post._id} />
+                  <>
+                  <div className="flex w-full justify-center">
+                    <DeleteBlock path="posts" id={post._id} />
+                    <Link
+                      className=" bg-yellow-500 px-5 py-3 text-center text-xs font-bold h-full w-full sm:w-auto flex justify-center sm:justify-end mx-auto uppercase text-gray-900 transition hover:bg-yellow-600 hover:text-white"
+                      type="button"
+                      href={`/post/${post._id}`}
+                    >
+                      <CiEdit />
+                    </Link>
+                  </div>
+                  </>
                 ) : null}
                 <Link
                   href={`/posts/${post._id}`}
