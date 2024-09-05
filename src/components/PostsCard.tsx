@@ -5,6 +5,7 @@ import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
+import DeleteBlock from "./DeleteBlock";
 
 const PostsCard = () => {
   const { data: posts, isLoading } = useQuery<PostsCashType[]>({
@@ -14,17 +15,27 @@ const PostsCard = () => {
   });
 
   if (isLoading) return <Loading />;
+  let isAuth: boolean = false;
+  const auth = localStorage.getItem("auth");
+  if (auth) {
+    isAuth = true;
+  } else {
+    isAuth = false;
+  }
 
   return (
     <>
       <div className="p-4">
         {/* @ts-ignore */}
         {posts?.data?.map((post) => (
-          <Link
-            href={`/posts/${post._id}`}
-            className="group flex transition border border-base-100 hover:border-[#714F04]   hover:shadow-2xl shadow-xl mb-4"
+          <article
+            key={post._id}
+            className="group flex flex-col sm:flex-row transition border border-base-100 hover:border-[#714F04] hover:shadow-2xl shadow-xl mb-4"
           >
-            <div className="hidden sm:block sm:basis-56">
+            <Link
+              href={`/posts/${post._id}`}
+              className="w-full sm:w-auto sm:basis-56"
+            >
               <Image
                 alt={post.title.slice(0, 60)}
                 src={post.imgurl}
@@ -32,7 +43,7 @@ const PostsCard = () => {
                 height={224}
                 className="aspect-square h-full w-full object-cover"
               />
-            </div>
+            </Link>
 
             <div className="flex flex-1 flex-col justify-between">
               <div className="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
@@ -46,17 +57,19 @@ const PostsCard = () => {
                   {post.title.slice(0, 140)}
                 </p>
               </div>
-
-              <div className="sm:flex sm:items-end sm:justify-end">
+              <div className="sm:flex gap-2 sm:items-end sm:justify-end">
+                {isAuth === true ? (
+                  <DeleteBlock path="posts" id={post._id} />
+                ) : null}
                 <Link
                   href={`/posts/${post._id}`}
-                  className="block bg-yellow-400 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition group-hover:bg-yellow-500"
+                  className="block bg-yellow-400 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition group-hover:bg-yellow-500 group-hover:text-white"
                 >
                   Read Post
                 </Link>
               </div>
             </div>
-          </Link>
+          </article>
         ))}
       </div>
     </>
