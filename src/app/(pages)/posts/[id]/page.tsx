@@ -1,12 +1,17 @@
 "use client";
 import { PageTitle } from "@/components";
+import ExpandableText from "@/components/ExpandableText";
+import useReadText from "@/hooks/useReadText";
 import useSinglePost from "@/hooks/useSinglePost";
 import Image from "next/image";
 import React from "react";
+import { FaPlay, FaStop } from "react-icons/fa";
 
 const SinglePostPage = () => {
   //@ts-ignore
   const post = useSinglePost();
+  //@ts-ignore
+  const { isSpeaking, handleReadText, handleStopReading } = useReadText(post?.body);
   return (
     <>
       {/* @ts-ignore */}
@@ -23,8 +28,25 @@ const SinglePostPage = () => {
         />
         <div className="px-5 w-[98%] md:w-[92%] mx-auto mb-4 md:mb-5 lg:mb-9">
           <p className="text-xl md:text-2xl font-light font-serif leading-9">
-            {/* @ts-ignore */}
-            {post?.body}
+            <div className="text-center gap-4 items-center flex-col">
+              {/* @ts-ignore */}
+              <ExpandableText text={post?.body} />
+              {!isSpeaking ? (
+                <button
+                  className="btn btn-neutral text-white rounded-full ml-3"
+                  onClick={handleReadText}
+                >
+                  <FaPlay />
+                </button>
+              ) : (
+                <button
+                  className="btn btn-neutral text-white rounded-full ml-3"
+                  onClick={handleStopReading}
+                >
+                  <FaStop />
+                </button>
+              )}
+            </div>
           </p>
         </div>
       </div>
