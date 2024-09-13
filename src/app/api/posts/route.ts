@@ -1,8 +1,6 @@
 import PostsCash from "@/cash/PostsCash";
 import PostModel from "@/model/PostModel";
-import { PostsCashType } from "@/types/entities";
 import RequestHandler from "@/util/RequestHandler";
-
 
 export async function GET() {
   const handler = new RequestHandler(PostModel, PostsCash);

@@ -1,7 +1,6 @@
 import PostsCash from "@/cash/PostsCash";
-import RequestHandler from "@/util/RequestHandler";
 import PostModel from "@/model/PostModel";
-import { PostsCashType } from "@/types/entities";
+import RequestHandler from "@/util/RequestHandler";
 
 //@ts-ignore
 export async function GET(req, { params }) {
@@ -23,4 +22,3 @@ export async function DELETE(req, { params }) {
   const handler = new RequestHandler(PostModel, PostsCash);
   return handler.DELETE(id, "Post Deleted successfully");
 }
-

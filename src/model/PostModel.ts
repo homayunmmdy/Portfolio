@@ -1,5 +1,6 @@
 import mongoose, { Schema } from "mongoose";
-mongoose.connect(process.env.MONGODB_URI as string);
+//@ts-ignore
+mongoose.connect(process.env.MONGODB_URI);
 mongoose.Promise = global.Promise;
 
 const postSchema = new Schema(
@@ -14,6 +15,7 @@ const postSchema = new Schema(
   }
 );
 
-const Post = mongoose.models.Post || mongoose.model("Post", postSchema);
+const PostModel =
+  mongoose.models.PostModel || mongoose.model("PostModel", postSchema);
 
-export default Post;
+export default PostModel;
