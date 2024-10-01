@@ -62,7 +62,7 @@ const PostsCard = () => {
                 </Link>
 
                 <p className="mt-2 line-clamp-3 text-sm/relaxed group-hover:text-[#714F04] cursor-pointer">
-                  {post.title.slice(0, 140)}
+                  {post.description.slice(0, 140)}
                 </p>
               </div>
               <div className="sm:flex gap-2 sm:items-end sm:justify-end">
