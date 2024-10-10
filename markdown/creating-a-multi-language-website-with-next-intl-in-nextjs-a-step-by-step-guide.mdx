@@ -1,0 +1,47 @@
+---
+title: "Creating a Multi-Language Website with next-intl in Next.js: A Step-by-Step Guide"
+description: "Are you looking to enhance your web development skills by transforming your project into a multi-language website using Next.js? One powerful strategy to achieve this is by integrating multi-language capabilities. In this tutorial, we'll walk you through the process of implementing a multi-language website using next-intl within Next.js."
+date: "Aug 2 2024"
+categories: ['nextjs' ,'next intl' ,'multi language' ,'i18n']
+imgURL: https://media.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F1urwancyfsen8jx1kjxk.png
+---
+
+Are you looking to enhance your web development skills by transforming your project into a multi-language website using Next.js? One powerful strategy to achieve this is by integrating multi-language capabilities. In this tutorial, we'll walk you through the process of implementing a multi-language website using next-intl within Next.js.
+
+<H2 text="Understanding next-intl"/>
+
+next-intl is a modern and highly efficient internationalization (i18n) framework designed for Next.js. Internationalization is crucial for enhancing user experience, and next-intl provides all the necessary tools to manage language nuances effectively.
+
+<H2 text="Getting Started with Next.js"/>
+
+Before we delve into integrating i18n, it's essential to have a foundational understanding of Next.js and to ensure you've set up a Next.js project on your local machine. If you haven't done so already, refer to the  <Link text="official documentation" href="https://nextjs.org/docs"/> for installation instructions.
+
+
+<Image alt="next intl home page" src="https://media.dev.to/cdn-cgi/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fldn4wiun38dh5n8sg7q2.png"/>
+
+With Next.js set up, you can now install the next-intl library by running the following commands in your project:
+
+<Code code="npm install next-intl"/>
+
+Next, create the following file structure:
+
+<Code code={`
+├── messages
+│ ├── en.json
+│ └── ...
+├── next.config.mjs
+└── src
+    ├── i18n.ts
+    ├── middleware.ts
+    └── app
+        └── [locale]
+            ├── layout.tsx
+            └── page.tsx
+`}/>
+
+Now, simply follow the <Link text="6 steps" href="https://next-intl-docs.vercel.app/docs/getting-started/app-router/with-i18n-routing"/> outlined in the official next-intl documentation for app routing in Next.js. If you are using the pages router in Next.js, don't worry—next-intl supports that as well, and you can find the instructions <Link href="https://next-intl-docs.vercel.app/docs/getting-started/pages-router" title="here"/>.
+
+
+Should you encounter any challenges or have questions along the way, feel free to ask in the comments section. Thank you for your time, and I look forward to assisting you further. Happy coding!
+
+
