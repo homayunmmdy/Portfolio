@@ -17,7 +17,7 @@ const AboutDetail = () => {
         <button
           type="button"
           onClick={toggleVisiblity}
-          className="flex items-center rounded-full border border-gray-300 bg-secondary-50 px-3 py-2 text-center text-sm font-medium text-gray-900 hover:bg-gray-100"
+          className="flex items-center rounded-full border border-gray-300 bg-secondary-50 px-3 py-2 text-center text-sm font-medium  hover:bg-gray-100"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
