@@ -14,7 +14,7 @@ const CV = () => {
             download
             className="duration-300 hover:bg-yellow-900 border hover:text-gray-50 rounded-lg bg-gray-50 font-semibold text-yellow-800 px-3 py-2 flex flex-row items-center gap-3"
           >
-            Dowload CV
+            See My CV
             <svg
               className="w-6 h-6 fill-current"
               height="100"

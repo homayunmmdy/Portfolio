@@ -1,24 +1,30 @@
 import Link from "next/link";
-import React from "react";
 
 const experiences = [
   {
     experience:
-      "Implement frontend part of the several modules for Iransamaneh like occasion, membership and companies",
+      "Tested over 100 components and multiple websites using Vitest, ensuring code reliability and robustness",
   },
   {
     experience:
-      "Worked closely with UI/UX team to redesign or design websites like Razebaghaa , Zisaan , Shahraranews",
+      " Engineered the occasions and memberships modules using ReactJS and JavaScript, empowering over 2,000 users to seamlessly manage and control their websites.",
   },
   {
     experience:
-      "Developed and tested over 100 compoentst and multiply websites useing Vitest ensuring high-quality reliable code",
+      "Collaborated with UI/UX teams to redesign Razebaghaa, Zisaan, and Shahraranews, improving mobile responsiveness and increasing user engagement through enhanced navigation and a more intuitive user experience.",
   },
   {
     experience:
-      "Streamlined page rendering performance, significantly reducing loading times and enhancing overall website",
+      "Boosted SEO and page speed, resulting in increase in website traffic, an improvement in conversion rates, and a increase in revenue by achieving higher search engine rankings and greater online visibility",
   },
-  { experience: "Revamped and maintained the Iransamaneh admin panel" },
+  {
+    experience:
+      "Developed multilingual websites for Tabnak, IQNA and others to increase international traffic and expand global reach",
+  },
+  {
+    experience:
+      "Revamped the Iransamaneh admin panel by redesigning key modules, reducing user workflow times, and decreasing support requests through improved customization options and streamlined processes",
+  },
 ];
 
 const Experience = () => {
