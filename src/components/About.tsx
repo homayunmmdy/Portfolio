@@ -8,7 +8,7 @@ const About = () => {
           <div className="text-yellow-600 relative mb-2 text-2xl text-center">
             About
           </div>
-          <p className="text-2xl  text-center md:text-3xl lg:text-4xl leading-8 ">
+          <p className="text-2xl text-white text-center md:text-3xl lg:text-4xl leading-8 ">
             Experienced Frontend Developer skilled in creating or improving
             websites that fulfill customer needs. Proficient in the design,
             installation, testing, and maintenance of web systems. Capable of
@@ -16,7 +16,7 @@ const About = () => {
             team.
           </p>
           <div className="text-center">
-            <button className="btn btn-outline my-6">
+            <button className="btn text-white btn-outline my-6">
               <span className="text-xl">
                 More About Me
               </span>
