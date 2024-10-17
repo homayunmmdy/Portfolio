@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import DeleteBlock from "./DeleteBlock";
 import { CiEdit } from "react-icons/ci";
+import { SortedByDate } from "./SortedByDate";
 
 const PostsCard = () => {
   const { data: posts, isLoading } = useQuery<PostsCashType[]>({
@@ -24,6 +25,8 @@ const PostsCard = () => {
     isAuth = false;
   }
 
+  // @ts-ignore
+  const sortedPost = SortedByDate(posts?.data)
   return (
     <>
       <div className="p-4">
@@ -35,7 +38,7 @@ const PostsCard = () => {
         </div>
         ): null}
         {/* @ts-ignore */}
-        {posts?.data?.map((post) => (
+        {sortedPost?.map((post) => (
           <article
             key={post._id}
             className="group flex flex-col sm:flex-row transition border border-base-100 hover:border-[#714F04] hover:shadow-2xl shadow-xl mb-4"
@@ -62,7 +65,7 @@ const PostsCard = () => {
                 </Link>
 
                 <p className="mt-2 line-clamp-3 text-sm/relaxed group-hover:text-[#714F04] cursor-pointer">
-                  {post.title.slice(0, 140)}
+                  {post.description.slice(0, 140)}
                 </p>
               </div>
               <div className="sm:flex gap-2 sm:items-end sm:justify-end">
